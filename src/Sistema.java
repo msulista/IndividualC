@@ -16,8 +16,7 @@ public class Sistema {
 		mensagem = "Bem-vindo à Livraria Sofia";
 		return mensagem ;
 	}
-	public String imprimeNovaMensagem(String mensagem){
-		
+	public String imprimeNovaMensagem(String mensagem){		
 		
 		return mensagem;
 	}
