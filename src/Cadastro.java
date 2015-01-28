@@ -1,5 +1,5 @@
 
-public class Livro {
+public class Cadastro {
 	
 	private int codigo;
 	private String titulo;

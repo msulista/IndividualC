@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -13,7 +14,10 @@ public class Main {
 		
 		Scanner input = new Scanner(System.in);
 		
+		ArrayList<Cadastro> livros = new ArrayList<Cadastro>();		
+		
 		Sistema sistema = new Sistema();
+		
 		
 		System.out.println("\n\n\n" + sistema.imprimeMensagemPadrao());
 		
@@ -39,6 +43,13 @@ public class Main {
 			}
 			
 		}
+		
+		System.out.println("Cadastre um intem:");
+		
+		sistema.cadastro();
+		
+		
+		
 
 	}
 

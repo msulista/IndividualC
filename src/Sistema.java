@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 
 public class Sistema {
 	
 	private String mensagem ;
+	
+	Scanner input = new Scanner(System.in);
+	Cadastro cad;
 	
 	public String getMensagem() {
 		return mensagem;
@@ -19,6 +24,29 @@ public class Sistema {
 	public String imprimeNovaMensagem(String mensagem){		
 		
 		return mensagem;
+	}
+	
+	public void cadastro(){
+		cad = new Cadastro();
+		
+		System.out.println("Informe o código:");
+		cad.setCodigo(input.nextInt());
+		
+		System.out.println("\nInforme o titulo:");
+		cad.setTitulo(input.next());
+		
+		System.out.println("\nInforme o autor:");
+		cad.setAutor(input.next());
+		
+		System.out.println("\nInforme o descrição:");
+		cad.setDescricao(input.next());
+		
+		System.out.println("\nInforme o quantidade:");
+		cad.setQuantidade(input.nextInt());
+		
+		System.out.println("\nInforme o preço:");
+		cad.setPreco(input.nextDouble());
+		
 	}
 	
 	
