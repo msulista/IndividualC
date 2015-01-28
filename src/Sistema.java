@@ -1,9 +1,12 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
 public class Sistema {
 	
 	private String mensagem ;
+	
+	ArrayList<Cadastro> acervo = new ArrayList<Cadastro>();
 	
 	Scanner input = new Scanner(System.in);
 	Cadastro cad;
@@ -47,8 +50,6 @@ public class Sistema {
 		System.out.println("\nInforme o preço:");
 		cad.setPreco(input.nextDouble());
 		
+		acervo.add(cad);		
 	}
-	
-	
-
 }

@@ -12,9 +12,8 @@ public class Main {
 		
 		
 		
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);	
 		
-		ArrayList<Cadastro> livros = new ArrayList<Cadastro>();		
 		
 		Sistema sistema = new Sistema();
 		
@@ -48,8 +47,9 @@ public class Main {
 		
 		sistema.cadastro();
 		
-		
-		
+		System.out.println("mostrando lista");
+		System.out.println(sistema.acervo.size());
+		System.out.println("\n");		
 
 	}
 
