@@ -1,14 +1,8 @@
 
 public class Sistema {
 	
-	private String mensagem = "Bem-vindo à Livraria Sofia";
+	private String mensagem ;
 	
-	public Sistema() {
-		// TODO Auto-generated constructor stub
-		
-		this.mensagem = mensagem;
-	}
-
 	public String getMensagem() {
 		return mensagem;
 	}
@@ -17,7 +11,13 @@ public class Sistema {
 		this.mensagem = mensagem;
 	}
 	
-	public String imprimeMensagem(){
+	public String imprimeMensagemPadrao(){
+		
+		mensagem = "Bem-vindo à Livraria Sofia";
+		return mensagem ;
+	}
+	public String imprimeNovaMensagem(String mensagem){
+		
 		
 		return mensagem;
 	}
